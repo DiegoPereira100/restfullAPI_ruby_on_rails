@@ -3,7 +3,6 @@ namespace :dev do
   task setup: :environment do
 
     puts "resetando o banco de dados..."
-
     %x(rails db:drop db:create db:migrate)
 
     puts "Cadastrando os tipos de contato..."
